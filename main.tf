@@ -21,19 +21,18 @@ variable "string_data" {
 }
 
 # Output the variables (they will be printed after apply)
+# Using nonsensitive() to explicitly expose the values in output
 output "ssh_key_output" {
   description = "SSH key provided"
-  value       = var.ssh_key
-  #sensitive   = true
+  value       = nonsensitive(var.ssh_key)
 }
 
 output "tls_certificate_output" {
   description = "TLS certificate provided"
-  value       = var.tls_certificate
-  #sensitive   = true
+  value       = nonsensitive(var.tls_certificate)
 }
 
 output "string_data_output" {
   description = "String data provided"
-  value       = var.string_data
+  value       = nonsensitive(var.string_data)
 }
