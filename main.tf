@@ -6,13 +6,13 @@ terraform {
 variable "ssh_key" {
   description = "SSH public key"
   type        = string
-  sensitive   = true
+  #sensitive   = true
 }
 
 variable "tls_certificate" {
   description = "TLS certificate content"
   type        = string
-  sensitive   = true
+  #sensitive   = true
 }
 
 variable "string_data" {
