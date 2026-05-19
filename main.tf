@@ -24,13 +24,13 @@ variable "string_data" {
 output "ssh_key_output" {
   description = "SSH key provided"
   value       = var.ssh_key
-  sensitive   = true
+  #sensitive   = true
 }
 
 output "tls_certificate_output" {
   description = "TLS certificate provided"
   value       = var.tls_certificate
-  sensitive   = true
+  #sensitive   = true
 }
 
 output "string_data_output" {
