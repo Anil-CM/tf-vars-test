@@ -47,4 +47,4 @@ After `terraform apply`, the following outputs will be displayed:
 - `tls_certificate_output` - The TLS certificate provided (sensitive)
 - `string_data_output` - The string data provided
 
-**Note:** Sensitive outputs are hidden by default. Use `terraform output <output_name>` to view them individually.
+**Note:** Sensitive outputs are hidden by default. Use `terraform output <output_name>` to view them individually.  
